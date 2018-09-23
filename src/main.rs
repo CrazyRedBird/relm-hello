@@ -45,5 +45,5 @@ impl Widget for Win {
 }
 
 fn main() {
-    Win::run(()).expect("Win::run failed");
+    Win::run(()).expect("Win::run() failed");
 }

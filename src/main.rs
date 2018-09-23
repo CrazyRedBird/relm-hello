@@ -1,6 +1,5 @@
 use {
     self::Msg::Quit,
-    failure::{format_err, Fallible},
     gtk::prelude::*,
     relm::{connect, connect_stream, Widget},
     relm_attributes::widget,
@@ -46,5 +45,5 @@ impl Widget for Win {
 }
 
 fn main() -> Fallible<()> {
-    Win::run(()).map_err(|_| format_err!("relm initialization error"))
+    Win::run(()).expect("Win::run failed")
 }

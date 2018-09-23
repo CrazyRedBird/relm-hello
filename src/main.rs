@@ -44,6 +44,6 @@ impl Widget for Win {
     }
 }
 
-fn main() -> Fallible<()> {
-    Win::run(()).expect("Win::run failed")
+fn main() {
+    Win::run(()).expect("Win::run failed");
 }

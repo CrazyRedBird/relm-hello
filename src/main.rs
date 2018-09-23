@@ -34,8 +34,9 @@ impl Widget for Win {
                     text: "Hello, world!",
                 },
                 gtk::Button {
-                    clicked => Quit,
                     label: "Close",
+
+                    clicked => Quit,
                 },
             },
 
